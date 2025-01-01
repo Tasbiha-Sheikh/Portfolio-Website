@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.jpg" type="image/png">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container-1">
+            <nav>
+                <img src="img/2.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+                <div  class="menu-btn" style="z-index: 999; margin-right: 2rem;">
+                    <i class="fas fa-solid fa-bars" id="open" onclick="openmenu()"></i>
+                    <i class="fas fa-solid fa-xmark" id="cross" onclick="closemenu()"></i>
+                </div>
+            </nav>
+            <div class="header-text">
+                <p>WEB Developer</p>
+                <h1>HI, I'M <span>TASBIHA</span><br>SHEIKH FROM PAKISTAN</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div id="pic1" class="about-col-1">
+                    <img src="img/pic1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit voluptatum consequatur ad
+                        voluptas quis minus. Aliquid, reprehenderit. Reprehenderit quia quod, consequatur debitis
+                        similique provident fugiat eligendi dolore omnis, eius unde.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Desiging web/app interfaces</li>
+                            <li><span>Web development</span><br>web development</li>
+                            <li><span>App development</span><br>building andrios/ios app</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-current</span><br>Desiging web/app interfaces</li>
+                            <li><span>2019-2021</span><br>web development</li>
+                            <li><span>2017-2019</span><br>building andrios/ios app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Matric</li>
+                            <li><span>2022</span><br>Intermediate</li>
+                            <li><span>2024</span><br>ADP Computer Science</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">MY SERVICES</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>WEB DESIGN</h2>
+                    <p>Web design is the process of planning, creating, and arranging content on websites. It involves
+                        layout design, user interface (UI) design, and ensuring a good user experience (UX). Key
+                        elements include visuals (colors, fonts, images), navigation, responsiveness (mobile-friendly),
+                        and functionality to make the site appealing, easy to use, and aligned with the brand’s goals.
+                    </p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX DESIGN</h2>
+                    <p>UI (User Interface) design focuses on the visual aspects of a digital product, such as buttons,
+                        icons, layout, typography, and color schemes. Its goal is to create an appealing and intuitive
+                        interface that users can easily interact with.<br> UX (User Experience) design centers on the
+                        overall feel and functionality of the product. It involves user research, creating smooth
+                        workflows, and ensuring the product is easy to use and meets user needs effectively. UX design
+                        aims to improve the user's journey and satisfaction throughout their interaction with the
+                        product.</p>
+
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>APP DESIGN</h2>
+                    <p>App design refers to the process of creating the visual layout and user experience (UX) of a
+                        mobile or web application. It involves designing the user interface (UI), focusing on
+                        navigation, usability, aesthetics, and overall functionality to ensure a seamless and engaging
+                        experience for users. Key elements include intuitive interaction, responsive design,
+                        accessibility, and aligning with user needs and the app’s objectives.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">MY WORK</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/social.png" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>A social media app is a platform that allows users to create, share, and interact with
+                            content such as text, photos, videos, and links. It fosters communication and networking by
+                            enabling users to connect with friends, family, or a wider audience. Key features typically
+                            include user profiles, news feeds, messaging, notifications, and tools for liking,
+                            commenting, and sharing content. Popular examples include Facebook, Instagram, and Twitter.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/music.png" alt="">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p> A music app is a platform that allows users to stream, download, or play music on their
+                            devices. It provides access to a wide library of songs, albums, and playlists from various
+                            artists and genres. Key features often include personalized recommendations, offline
+                            listening, playlist creation, and social sharing. Examples of popular music apps include
+                            Spotify, Apple Music, and YouTube Music.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/app.png" alt="">
+                    <div class="layer">
+                        <h3>Online app</h3>
+                        <p>
+                            An online app, also known as a web app, is a software application that runs on a web server
+                            and is accessed through a web browser with an internet connection. Unlike traditional
+                            desktop applications, it doesn’t need to be downloaded or installed. Key examples include
+                            Google Docs, Facebook, and Gmail, where users can interact with data, perform tasks, and
+                            access services in real time over the internet.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+
+        </div>
+    </div>
+<div id="contact" class="container"></div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">CONTACT ME</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>contactt@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>03255837216</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/Resume.pdf" download class="btn  btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contactForm">
+                        <div class="inputbox">
+                            <label for="name">NAME:</label>
+                            <input type="text" name="name" placeholder="your name" id="name" required>
+                            <small class="error"></small>
+                        </div>
+                        <div class="inputbox">
+                            <label for="email">EMAIL:</label>
+                            <input type="email" name="email" placeholder="your email" id="email" required>
+                            <small class="error"></small>
+                        </div>
+                        <div class="inputbox">
+                            <label for="message">MESSAGE:</label>
+                            <textarea name="message" rows="10" placeholder="your message" id="message"></textarea>
+                            <small class="error"></small>
+                        </div>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright 0 tasbiha. Made with<i class="fa-solid fa-heart"></i> my easy tutorials</p>
+
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+            document.getElementById("open").style.display="none"
+            document.getElementById("cross").style.display="block"
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+            document.getElementById("cross").style.display="none"
+            document.getElementById("open").style.display="block"
+        }
+        
+// ///////////////////////email api//////////////////////////////
+emailjs.init("-Cwgnww4YUJvJL7qN"); // Replace with your public key
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault(); // Prevent the default form submission
+
+  emailjs
+    .sendForm('service_12vyn56', 'template_giqig0n', this)
+    .then(
+      function () {
+        alert('Thanks for contacting!');
+      },
+      function (error) {
+        alert('FAILED to sent your message try again later...', error.text);
+      }
+    );
+});
+    
+    </script>
+</body>
+
+</html>
